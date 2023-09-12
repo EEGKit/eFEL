@@ -32,6 +32,6 @@ feature2function FptrTable;
 
 std::map<std::string, feature2function*> mapFptrLib;
 
-string GErrorStr;
+std::string GErrorStr;
 
 #endif

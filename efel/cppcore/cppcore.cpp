@@ -36,9 +36,15 @@
 
 #include <Python.h>
 
+#include <string>
+#include <vector>
+
 #include <cstddef>
 #include <cfeature.h>
 #include <efel.h>
+
+using std::vector;
+using std::string;
 
 #if PY_MAJOR_VERSION >= 3
 #define IS_PY3K

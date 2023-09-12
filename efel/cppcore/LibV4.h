@@ -22,10 +22,6 @@
 #include "mapoperations.h"
 #include "Utils.h"
 
-#include <vector>
-
-using std::vector;
-
 namespace LibV4 {
 int peak_indices(mapStr2intVec& IntFeatureData,
                  mapStr2doubleVec& DoubleFeatureData, mapStr2Str& StringData);

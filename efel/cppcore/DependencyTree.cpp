@@ -22,6 +22,11 @@
 #include <cctype> //isspace
 #include <fstream>
 
+using std::list;
+using std::map;
+using std::string;
+using std::vector;
+
 static void removeAllWhiteSpace(string &str) {
   str.erase(std::remove_if(str.begin(), str.end(), isspace), str.end());
 }

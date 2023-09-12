@@ -21,6 +21,7 @@
 #include <algorithm>
 #include <functional>
 #include <list>
+#include <vector>
 #include <math.h>
 
 using std::bind2nd;
@@ -29,6 +30,7 @@ using std::greater_equal;
 using std::less_equal;
 using std::list;
 using std::min_element;
+using std::vector;
 
 int LibV3::interpolate(mapStr2intVec& IntFeatureData,
                        mapStr2doubleVec& DoubleFeatureData,

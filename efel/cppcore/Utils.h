@@ -27,8 +27,6 @@
 #include <vector>
 #include <utility>
 
-using std::vector;
-
 struct linear_fit_result
 {
   double slope;
@@ -40,19 +38,19 @@ struct linear_fit_result
   double r_square;
 };
 
-int LinearInterpolation(double dt, const vector<double>& X,
-                        const vector<double>& Y, vector<double>& InterpX,
-                        vector<double>& InterpY);
-int getCentralDifferenceDerivative(double dx, const vector<double>& v,
-                                   vector<double>& dv);
-void getfivepointstencilderivative(const vector<double>& v, vector<double>& dv);
-linear_fit_result slope_straight_line_fit(const vector<double>& x,
-                                          const vector<double>& y);
+int LinearInterpolation(double dt, const std::vector<double>& X,
+                        const std::vector<double>& Y, std::vector<double>& InterpX,
+                        std::vector<double>& InterpY);
+int getCentralDifferenceDerivative(double dx, const std::vector<double>& v,
+                                   std::vector<double>& dv);
+void getfivepointstencilderivative(const std::vector<double>& v, std::vector<double>& dv);
+linear_fit_result slope_straight_line_fit(const std::vector<double>& x,
+                                          const std::vector<double>& y);
 
 template <class T>
-double vec_median(vector<T> v);
+double vec_median(std::vector<T> v);
 template <class T>
-double vec_mean(const vector<T> &v);
+double vec_mean(const std::vector<T> &v);
 
 std::pair<size_t, size_t> get_time_index(std::vector<double> &t, double startTime,
                                      double endTime, double precisionThreshold);

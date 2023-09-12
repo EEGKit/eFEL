@@ -22,10 +22,6 @@
 #include "Utils.h"
 #include "mapoperations.h"
 
-#include <vector>
-
-using std::vector;
-
 namespace LibV2 {
 // AP parameters of eCode Specification 1.04
 // partly reimplemented Shaul's matlab code ap_points.m

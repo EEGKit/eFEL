@@ -24,11 +24,9 @@
 
 #include <vector>
 
-using std::vector;
-
 namespace LibV1 {
-int printVectorI(char* strName, vector<int> vec);
-int printVectorD(char* strName, vector<double> vec);
+int printVectorI(char* strName, std::vector<int> vec);
+int printVectorD(char* strName, std::vector<double> vec);
 
 int interpolate(mapStr2intVec& IntFeatureData,
                 mapStr2doubleVec& DoubleFeatureData, mapStr2Str& StringData);

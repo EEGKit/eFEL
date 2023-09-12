@@ -20,7 +20,10 @@
 #include <algorithm>
 #include <functional>
 #include <iterator>
+#include <vector>
 #include <math.h>
+
+using std::vector;
 
 // new algorithm to find the spikes in the voltage trace
 // based on minimum spike height

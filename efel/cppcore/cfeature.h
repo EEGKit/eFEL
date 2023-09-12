@@ -30,48 +30,45 @@
 #include "DependencyTree.h"
 #include "eFELLogger.h"
 
-using std::string;
-using std::vector;
-
 
 class cFeature {
   mapStr2intVec mapIntData;
   mapStr2doubleVec mapDoubleData;
   mapStr2Str mapStrData;
-  std::map<string, string> featuretypes;
+  std::map<std::string, std::string> featuretypes;
   FILE* fin;
   void fillfeaturetypes();
 
  public:
-  std::map<string, vector<featureStringPair > > fptrlookup;
-  vector<int>& getmapIntData(string strName);
-  vector<double>& getmapDoubleData(string strName);
+  std::map<std::string, std::vector<featureStringPair > > fptrlookup;
+  std::vector<int>& getmapIntData(std::string strName);
+  std::vector<double>& getmapDoubleData(std::string strName);
 
   eFELLogger logger;
 
-  cFeature(const string& depFile, const string& outdir);
-  int getmapfptrVec(string strName, vector<feature_function>& vFptr);
-  int calc_features(const string& name);
-  int setFeatureInt(string strName, vector<int>& intVec);
-  int getFeatureInt(string strName, vector<int>& vec);
-  int setFeatureDouble(string strName, vector<double>& DoubleVec);
-  int getFeatureDouble(string strName, vector<double>& vec);
-  int setFeatureString(const string& key, const string& value);
-  int getFeatureString(const string& key, string& value);
-  void getTraces(const string& wildcard, vector<string>& traces);
+  cFeature(const std::string& depFile, const std::string& outdir);
+  int getmapfptrVec(std::string strName, std::vector<feature_function>& vFptr);
+  int calc_features(const std::string& name);
+  int setFeatureInt(std::string strName, std::vector<int>& intVec);
+  int getFeatureInt(std::string strName, std::vector<int>& vec);
+  int setFeatureDouble(std::string strName, std::vector<double>& DoubleVec);
+  int getFeatureDouble(std::string strName, std::vector<double>& vec);
+  int setFeatureString(const std::string& key, const std::string& value);
+  int getFeatureString(const std::string& key, std::string& value);
+  void getTraces(const std::string& wildcard, std::vector<std::string>& traces);
   int printFeature(const char* strFileName);
   int printMapMember(FILE* fp);
 
-  string featuretype(string featurename);
-  string getGError();
-  void get_feature_names(vector<string>& feature_names);
-  int setVersion(string strDepFile);
-  double getDistance(string strName, double mean, double std, 
+  std::string featuretype(std::string featurename);
+  std::string getGError();
+  void get_feature_names(std::vector<std::string>& feature_names);
+  int setVersion(std::string strDepFile);
+  double getDistance(std::string strName, double mean, double std, 
           bool trace_check=true, double error_dist=250);
 
   // calculation of GA errors
   template<typename T>
-  double calc_error_bio(const vector<T>& v, double bio_mean, double bio_sd)
+  double calc_error_bio(const std::vector<T>& v, double bio_mean, double bio_sd)
   {
     if (v.size() != 0) {
       double error = 0.;

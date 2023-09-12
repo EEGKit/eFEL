@@ -22,36 +22,35 @@
 
 #include "types.h"
 
+#include <map>
 #include <string>
 #include <vector>
 
-using std::string;
-using std::vector;
 
-extern string GErrorStr;
+extern std::string GErrorStr;
 
-int getIntParam(mapStr2intVec& IntFeatureData, const string& param,
-                vector<int>& vec);
-int getDoubleParam(mapStr2doubleVec& DoubleFeatureData, const string& param,
-                   vector<double>& vec);
-int getStrParam(mapStr2Str& StringData, const string& param, string& value);
+int getIntParam(mapStr2intVec& IntFeatureData, const std::string& param,
+                std::vector<int>& vec);
+int getDoubleParam(mapStr2doubleVec& DoubleFeatureData, const std::string& param,
+                   std::vector<double>& vec);
+int getStrParam(mapStr2Str& StringData, const std::string& param, std::string& value);
 template <class T>
 void setVec(std::map<std::string, std::vector<T> >& FeatureData, mapStr2Str& StringData,
-               string key, const vector<T>& value);
+               std::string key, const std::vector<T>& value);
 template <class T>
 int getVec(std::map<std::string, std::vector<T> >& FeatureData, mapStr2Str& StringData,
-                 string strFeature, vector<T>& v);
+                 std::string strFeature, std::vector<T>& v);
 template <class T>
 int CheckInMap(std::map<std::string, std::vector<T> >& FeatureData,
-                     mapStr2Str& StringData, string strFeature, int& nSize);
+                     mapStr2Str& StringData, std::string strFeature, int& nSize);
 // eCode feature convenience function
 int mean_traces_double(mapStr2doubleVec& DoubleFeatureData,
-                       const string& feature, const string& stimulus_name,
-                       int i_elem, vector<double>& mean);
+                       const std::string& feature, const std::string& stimulus_name,
+                       int i_elem, std::vector<double>& mean);
 int std_traces_double(mapStr2doubleVec& DoubleFeatureData,
-                      const string& feature, const string& stimulus_name,
-                      double mean, int i_elem, vector<double>& std);
-void getTraces(mapStr2doubleVec& DoubleFeatureData, const string& wildcard,
-               vector<string>& traces);
+                      const std::string& feature, const std::string& stimulus_name,
+                      double mean, int i_elem, std::vector<double>& std);
+void getTraces(mapStr2doubleVec& DoubleFeatureData, const std::string& wildcard,
+               std::vector<std::string>& traces);
 
 #endif

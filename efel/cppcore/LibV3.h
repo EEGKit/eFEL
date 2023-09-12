@@ -21,10 +21,6 @@
 #include "mapoperations.h"
 #include "Utils.h"
 
-#include <vector>
-
-using std::vector;
-
 namespace LibV3 {
 int interpolate(mapStr2intVec& IntFeatureData,
                 mapStr2doubleVec& DoubleFeatureData, mapStr2Str& StringData);

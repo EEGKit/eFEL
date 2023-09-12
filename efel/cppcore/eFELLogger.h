@@ -20,18 +20,19 @@
 #ifndef EFELLOGGER_H
 #define EFELLOGGER_H
 
-#include <iostream>
 #include <fstream>
+#include <iostream>
+#include <string>
 #include <vector>
 
 class eFELLogger
 {
 public:
-  eFELLogger(const string &outdir)
+  eFELLogger(const std::string &outdir)
     : logging(false)
   {
     if (!outdir.empty()) {
-      string filename = outdir + "/fllog.txt";
+        std::string filename = outdir + "/fllog.txt";
       logfile.open(filename.c_str(), std::fstream::out | std::fstream::app);
       logging = true;
     }

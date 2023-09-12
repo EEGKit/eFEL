@@ -21,12 +21,15 @@
 
 #include <cstdlib>
 #include <iostream>
+#include <string>
 
 #include <time.h>
 
-using std::cout;
-using std::endl;
 
+using std::endl;
+using std::map;
+using std::string;
+using std::vector;
 
 
 cFeature::cFeature(const string& strDepFile, const string& outdir)

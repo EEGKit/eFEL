@@ -23,6 +23,8 @@
 #include <functional>
 #include <iostream>
 #include <math.h>
+#include <string>
+#include <vector>
 
 using std::bind2nd;
 using std::find_if;
@@ -30,6 +32,7 @@ using std::greater_equal;
 using std::min_element;
 using std::max_element;
 using std::transform;
+using std::vector;
 
 // AP parameters
 //
@@ -999,7 +1002,7 @@ int LibV2::E39(mapStr2intVec& IntFeatureData,
   if (retval) {
     return nsize;
   }
-  vector<string> stim_params;
+  vector<std::string> stim_params;
   // retrieve the complete suffixes of all traces where the suffix matches
   // "IDthreshold":
   getTraces(DoubleFeatureData, "IDthreshold", stim_params);

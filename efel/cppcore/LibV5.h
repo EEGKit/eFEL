@@ -22,10 +22,7 @@
 #include "mapoperations.h"
 #include "Utils.h"
 
-#include <vector>
 #include <stdexcept>
-
-using std::vector;
 
 namespace LibV5 {
 int ISI_log_slope(mapStr2intVec& IntFeatureData,

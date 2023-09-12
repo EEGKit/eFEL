@@ -17,10 +17,16 @@
  */
 
 #include <time.h>
+#include <string>
+#include <vector>
+
 #include "efel.h"
 #include "cfeature.h"
 
 cFeature *pFeature = NULL;
+
+using std::vector;
+using std::string;
 
 int Initialize(const char *strDepFile, const char *outdir) {
   if (pFeature != NULL) {

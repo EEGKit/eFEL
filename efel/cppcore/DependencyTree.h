@@ -27,33 +27,28 @@
 #include <utility>
 #include <vector>
 
-using std::list;
-using std::map;
-using std::string;
-using std::vector;
-
 class cTree {
-  vector<string> strDependencyFile;
-  vector<string> vecFeature;
+  std::vector<std::string> strDependencyFile;
+  std::vector<std::string> vecFeature;
 
  public:
-  string ErrorStr;
-  list<string> FinalList;
-  list<string> ChildList;
+  std::string ErrorStr;
+  std::list<std::string> FinalList;
+  std::list<std::string> ChildList;
   cTree() {};
   cTree(const char *strFileName);
-  int getDependencyList(string str);
-  int setFeaturePointers(map<string, feature2function *> &mapFptrLib,
+  int getDependencyList(std::string str);
+  int setFeaturePointers(std::map<std::string, feature2function *> &mapFptrLib,
                          feature2function *FptrTable,
-                         map<string, vector<feature_function> > *FptrLookup);
+                         std::map<std::string, std::vector<feature_function> > *FptrLookup);
 
-  int setFeaturePointers(map<string, feature2function *> &mapFptrLib,
+  int setFeaturePointers(std::map<std::string, feature2function *> &mapFptrLib,
                          feature2function *FptrTable,
-                         map<string, vector<featureStringPair > > *FptrLookup);
-  int getChilds(string strLine, list<string> &childs);
-  int getDependency(string strLine, string parent_stim);
-  int AddUniqueItem(string strFeature, list<string> &lstFinal);
-  int getAllParents(vector<string> &vecFeature);
+                         std::map<std::string, std::vector<featureStringPair > > *FptrLookup);
+  int getChilds(std::string strLine, std::list<std::string> &childs);
+  int getDependency(std::string strLine, std::string parent_stim);
+  int AddUniqueItem(std::string strFeature, std::list<std::string> &lstFinal);
+  int getAllParents(std::vector<std::string> &vecFeature);
 };
 
 #endif

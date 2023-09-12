@@ -37,6 +37,7 @@ using std::less_equal;
 using std::list;
 using std::min_element;
 using std::max_element;
+using std::vector;
 
 template<typename T>
 std::string to_string(const T& value) {

@@ -25,6 +25,9 @@
 #include <deque>
 #include <functional>
 #include <iterator>
+#include <vector>
+
+using std::vector;
 
 // slope of loglog of ISI curve
 static int __ISI_log_slope(const vector<double>& isiValues,

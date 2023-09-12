@@ -17,6 +17,8 @@
  */
 #include "FillFptrTable.h"
 
+using std::string;
+
 int FillFptrTable() {
   //****************** for FptrTableV1 *****************************
   FptrTableV1["interpolate"] = &LibV1::interpolate;

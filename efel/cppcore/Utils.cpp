@@ -22,8 +22,11 @@
 #include <iostream>
 #include <iostream>
 #include <iterator>
+#include <vector>
 #include <math.h>
 #include <assert.h>
+
+using std::vector;
 
 int LinearInterpolation(double Stepdx,
                         const vector<double>& X,

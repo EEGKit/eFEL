@@ -15,9 +15,16 @@
  * along with this library; if not, write to the Free Software Foundation, Inc.,
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
+#include <string>
+#include <vector>
 
 #include "mapoperations.h"
 #include <math.h>
+
+
+
+using std::string;
+using std::vector;
 
 extern string GErrorStr;
 
