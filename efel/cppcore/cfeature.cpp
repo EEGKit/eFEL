@@ -20,11 +20,9 @@
 #include "Global.h"
 
 #include <cstdlib>
+#include <ctime>
 #include <iostream>
 #include <string>
-
-#include <time.h>
-
 
 using std::endl;
 using std::map;

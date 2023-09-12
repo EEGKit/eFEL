@@ -36,12 +36,12 @@
 
 #include <Python.h>
 
+#include <cstddef>
 #include <string>
 #include <vector>
 
-#include <cstddef>
-#include <cfeature.h>
-#include <efel.h>
+#include "cfeature.h"
+#include "efel.h"
 
 using std::vector;
 using std::string;

@@ -20,12 +20,12 @@
 #define __UTILS
 
 
-#include <stdlib.h>
-#include <stdio.h>
 #include <algorithm>
+#include <cstdio>
+#include <cstdlib>
 #include <numeric>
-#include <vector>
 #include <utility>
+#include <vector>
 
 struct linear_fit_result
 {

@@ -17,14 +17,15 @@
  */
 
 #include "Utils.h"
+
 #include <algorithm>
+#include <cassert>
+#include <cmath>
 #include <cstdio>
 #include <iostream>
 #include <iostream>
 #include <iterator>
 #include <vector>
-#include <math.h>
-#include <assert.h>
 
 using std::vector;
 

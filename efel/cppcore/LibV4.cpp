@@ -17,11 +17,12 @@
  */
 
 #include "LibV4.h"
+
 #include <algorithm>
+#include <cmath>
 #include <functional>
 #include <iterator>
 #include <vector>
-#include <math.h>
 
 using std::vector;
 

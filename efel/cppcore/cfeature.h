@@ -21,10 +21,10 @@
 
 #include "types.h"
 
+#include <cmath>
 #include <map>
 #include <string>
 #include <vector>
-#include <math.h>
 
 #include "FillFptrTable.h"
 #include "DependencyTree.h"

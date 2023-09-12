@@ -19,10 +19,10 @@
 #include "LibV2.h"
 
 #include <algorithm>
+#include <cmath>
 #include <cstdlib>
 #include <functional>
 #include <iostream>
-#include <math.h>
 #include <string>
 #include <vector>
 

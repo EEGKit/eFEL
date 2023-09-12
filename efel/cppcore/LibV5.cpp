@@ -18,7 +18,6 @@
 
 #include "LibV5.h"
 
-#include <math.h>
 #include <algorithm>
 #include <cmath>
 #include <cstdio>

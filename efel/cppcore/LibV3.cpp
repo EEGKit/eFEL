@@ -19,10 +19,10 @@
 #include "LibV3.h"
 
 #include <algorithm>
+#include <cmath>
 #include <functional>
 #include <list>
 #include <vector>
-#include <math.h>
 
 using std::bind2nd;
 using std::find_if;

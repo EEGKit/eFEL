@@ -19,15 +19,16 @@
 #include "LibV1.h"
 
 #include <algorithm>
+#include <cmath>
 #include <cstdio>
 #include <functional>
+#include <iomanip>
 #include <iostream>
 #include <iterator>
 #include <list>
-#include <math.h>
-#include <string>
 #include <sstream>
-#include <iomanip>
+#include <string>
+
 
 using std::bind2nd;
 using std::find_if;
